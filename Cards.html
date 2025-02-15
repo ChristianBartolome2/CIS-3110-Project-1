@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+
+.navbar-brand, 
+.navbar-nav .nav-link {
+    font-family: 'Press Start 2P', cursive; /* Change font */
+    font-size: 1rem; /* Adjust size */
+    color: #fff30c !important; /* Gold text */
+    letter-spacing: 1px; /* Slight spacing */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Strong shadow for readability */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+    padding: 8px 15px; /* Add padding for better hover effect */
+    border-radius: 5px; /* Slight rounding */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #000 !important; /* Change text color on hover */
+    background-color: #fff30c; /* Highlight background */
+    text-shadow: none; /* Remove text shadow */
+}
+
+.custom-navbar {
+    background-color: #18276E; /* Change to your preferred color */
+}
+
+
+body {
+    background-color: #18276E;
+    color: #000000;
+}
+
+        /* Custom styles if needed */
+        .jumbotron {
+            background-color: #ffffff; /* Light gray background for jumbotron */
+        }
+
+        .card-container {
+    perspective: 1000px; /* Enables 3D effect */
+}
+
+.card {
+    width: 20rem;
+    height: 16rem; /* Adjust height to fit content */
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    font-size: 14px;
+}
+
+.card-front {
+    background: #18276E;
+    font-family: 'Press Start 2P', cursive; /* Apply arcade style font */
+}
+
+.card-front .card-title {
+    font-size: .90rem; /* Adjust size */
+    color: #fff30c !important;
+}
+
+.card-back {
+    background: #319DDA;
+    font-family: 'Futura Heavy Oblique', cursive;
+    color: #fff30c;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.card-img-top {
+    height: 180px; /* Adjust as needed */
+    object-fit: cover; /* Ensures images fill the space evenly */
+}
+
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body .btn {
+    margin-top: 0px;
+    width: 100%; 
+}
+
+.footer {
+    background-color: #18276E !important;
+}
+
+.col-md-4 {
+    margin-bottom: 20px; /* Adjust the value as needed */
+}
+
+.footer .text-muted {
+    color: white !important;
+}
+
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <a class="navbar-brand" href="#">
+        <img src="https://static.wikia.nocookie.net/mudae/images/b/b4/Fighting_Games_Logo.png/revision/latest?cb=20220611004030" alt="FGC HUB" style="height: 40px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="divs.html">Events</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="cards.html">Evo 2025</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="form.html">Q&A</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+ <div class="container mt-4">
+    <div class="row justify-content-center">
+    <div class="col-md-4">
+        <div class="card-container">
+            <div class="card">
+                <div class="card-inner">
+                    <!-- Front Side -->
+                    <div class="card-front">
+                        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202211/1408/l3bg7nmfPpPzam5jOVlaUFww.jpg" class="card-img-top" alt="Street Fighter 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Street Fighter 6</h5>
+                        </div>
+                    </div>
+                    <!-- Back Side -->
+                    <div class="card-back">
+                        <p> <br>Street Fighter 6 is a 2023 fighting game developed and published by Capcom. It is the sixth main entry in the Street Fighter franchise, following Street Fighter V (2016), and was released for PlayStation 4, PlayStation 5, Windows and Xbox Series X/S</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card-container">
+            <div class="card">
+                <div class="card-inner">
+                    <!-- Front Side -->
+                    <div class="card-front">
+                        <img src="https://gmedia.playstation.com/is/image/SIEPDC/tekken-8-keyart-01-en-15may23?$native$" class="card-img-top" alt="Street Fighter 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Tekken 8</h5>
+                        </div>
+                    </div>
+                    <!-- Back Side -->
+                    <div class="card-back">
+                        <p> <br>TEKKEN 8 continues the tragic saga of the Mishima bloodline and its world-shaking father-and-son grudge matches. Kazuya continues his conquest for global domination, using the forces of G Corporation to wage war on the world. Jin is forced to face his fate head-on as he is reunited with his long-lost mother and seeks to stop his father Kazuya's reign of terror.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card-container">
+            <div class="card">
+                <div class="card-inner">
+                    <!-- Front Side -->
+                    <div class="card-front">
+                        <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1971870/capsule_616x353.jpg?t=1729006754" class="card-img-top" alt="Street Fighter 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Mortal Kombat 1</h5>
+                        </div>
+                    </div>
+                    <!-- Back Side -->
+                    <div class="card-back">
+                        <p> <br>Mortal Kombat 1 is a 2023 fighting game developed by NetherRealm Studios and published by Warner Bros. Games. It is the twelfth main installment in the Mortal Kombat series, and serves as its second reboot after 2011's Mortal Kombat. The game was released on Nintendo Switch, PlayStation 5, Windows, and Xbox Series X/S on September 19, 2023.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card-container">
+            <div class="card">
+                <div class="card-inner">
+                    <!-- Front Side -->
+                    <div class="card-front">
+                        <img src="https://rising.granbluefantasy.jp/assets/images/common/common/ogp_1.jpg" class="card-img-top" alt="Street Fighter 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Granblue Fantasy Versus: Rising</h5>
+                        </div>
+                    </div>
+                    <!-- Back Side -->
+                    <div class="card-back">
+                        <p> <br>Granblue Fantasy Versus: Rising is a 2D fighting game developed by Arc System Works and published by Cygames. It is a sequel to Granblue Fantasy Versus, and was released worldwide on December 14, 2023 for PlayStation 4, PlayStation 5, and Windows.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card-container">
+            <div class="card">
+                <div class="card-inner">
+                    <!-- Front Side -->
+                    <div class="card-front">
+                        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1384160/header.jpg?t=1731308439" class="card-img-top" alt="Street Fighter 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Guilty Gear Strive</h5>
+                        </div>
+                    </div>
+                    <!-- Back Side -->
+                    <div class="card-back">
+                        <p> <br>Guilty Gear Strive is a fighting video game developed by Arc System Works and published by Arc System Works and Bandai Namco Entertainment. It is the seventh mainline installment of the Guilty Gear series, and the 25th overall. The game was released for PlayStation 4, PlayStation 5 and Windows in June 2021.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card-container">
+            <div class="card">
+                <div class="card-inner">
+                    <!-- Front Side -->
+                    <div class="card-front">
+                        <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/357190/capsule_616x353.jpg?t=1644282901" class="card-img-top" alt="Street Fighter 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Ultimate Marvel vs Capcom 3</h5>
+                        </div>
+                    </div>
+                    <!-- Back Side -->
+                    <div class="card-back">
+                        <p> <br>Ultimate Marvel vs. Capcom 3 (アルティメット マーヴル VS. カプコン3) is a crossover fighting game developed by Capcom. It is an updated version of Marvel vs. Capcom 3: Fate of Two Worlds featuring 12 new characters, 9 new stages, and updated gameplay. Ultimate Marvel vs. Capcom 3 was released in November 2011 for the PlayStation 3 and Xbox 360.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- Closing row div -->
+</div> <!-- Closing container div -->
+
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+            <span class="text-muted">&copy; 2025 Fighting Game Hub. All rights reserved.</span>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
