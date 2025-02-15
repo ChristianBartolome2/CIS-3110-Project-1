@@ -1,0 +1,108 @@
+input:focus, textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+    transition: 0.3s;
+}
+
+input, textarea {
+    transition: all 0.3s ease-in-out;
+}
+
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: url('https://www.vgmuseum.com/end/arcade/e/mvc2-6.png') no-repeat center center fixed;
+    background-size: 100%;
+}
+.jumbotron {
+    background-color: #f8f9fa; /* Light gray background for jumbotron */
+}
+.container {
+
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+/* Custom styles for navbar and footer background images */
+nav {
+    background-image: url('https://static.wikia.nocookie.net/marvelvscapcom/images/a/ad/MvC2_logo.png/revision/latest?cb=20200126071511');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+nav.navbar {
+    background-color: #034770 !important; /* Dark gray background */
+}
+
+
+footer {
+    background-image: url('https://www.vgmuseum.com/end/arcade/e/mvc2-6.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white; /* Change text color for visibility if needed */
+}
+
+.footer .text-muted {
+    color: white !important;
+}
+
+
+form,
+        label,
+        input,
+        textarea,
+        button {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 16px; /* Adjust the font size if needed */
+        }
+
+        h2 {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 32px; /* Adjust the font size as necessary */
+        }
+
+        .navbar-brand, 
+        .navbar-nav .nav-link {
+            font-family: 'Press Start 2P', cursive; /* Change font */
+            font-size: 1rem; /* Adjust size */
+            color: #fff30c !important; /* Gold text */
+            letter-spacing: 1px; /* Slight spacing */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Strong shadow for readability */
+            transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+            padding: 8px 15px; /* Add padding for better hover effect */
+            border-radius: 5px; /* Slight rounding */
+        }
+        
+        .navbar-nav .nav-link:hover {
+            color: #000 !important; /* Change text color on hover */
+            background-color: #fff30c; /* Highlight background */
+            text-shadow: none; /* Remove text shadow */
+        }
+
+    /* Change label text color */
+.form-group label {
+    color: #ff5733; /* Change this to your preferred color */
+    font-weight: bold; /* Optional: makes the text bold */
+}
+
+/* Change color for Contact Form heading */
+h2 {
+    color: #ff5733; /* Replace with your preferred color */
+    text-align: center; /* Optional: Centers the heading */
+    font-weight: bold; /* Optional: Makes the text bold */
+}
+
+.form-group + button {
+    margin-bottom: 30px; /* Adjust as needed */
+}
+
+
+      
+        
+
