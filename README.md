@@ -7,3 +7,4 @@ A page with a form, with multiple text boxes and a submit button, dox
 Page with multiple cards
 Footers on each page
 Navs on each page
+Should address an industry, and represent a company in an industry. 
